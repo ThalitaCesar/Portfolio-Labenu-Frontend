@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import { Menu } from "./Menu";
-import { HeaderContainer, ButtonGroup1, ButtonGroup2, ButtonMenu, ButtonMenu2 } from "./styles";
-
+import { HeaderContainer, ButtonMenu, ButtonMenu2, Ul, Li, ButtonMenuLogo, Hamburguer } from "./styles";
+import { useEffect, useState } from "react";
 
 export function Header() {
 
-     
+  const [open, setOpen] = useState(false)
+
+   useEffect(()=>{
+
+   })  
     const navigate = useNavigate();
 
     const goToHello = () => {
@@ -26,16 +29,20 @@ export function Header() {
 
     return (
         <HeaderContainer>
-            <ButtonGroup1>
-            <ButtonMenu>thalita-cesar</ButtonMenu>
-            <ButtonMenu onClick={goToHello}>_hello</ButtonMenu>
-            <ButtonMenu onClick={goToAboutMe}>_sobre-mim</ButtonMenu>
-            <ButtonMenu onClick={goToProjects}>_projetos</ButtonMenu>
-            </ButtonGroup1>
-
-            <ButtonGroup2>
-            <ButtonMenu2 onClick={goToContact}>_contato</ButtonMenu2>
-            </ButtonGroup2>
+        
+            <ButtonMenuLogo>thalita-cesar</ButtonMenuLogo>
+            <Hamburguer open={open} onClick={() => setOpen(!open)}>
+              {/* <img src={Vector}/>   */}
+              <div />
+              <div />
+              <div />   
+              </Hamburguer>
+            <Ul open={open}>       
+            <Li><ButtonMenu onClick={goToHello}>_ola</ButtonMenu></Li>
+            <Li><ButtonMenu onClick={goToAboutMe}>_sobre-mim</ButtonMenu></Li>
+            <Li><ButtonMenu onClick={goToProjects}>_projetos</ButtonMenu></Li> 
+            <Li><ButtonMenu2 onClick={goToContact}>_contato</ButtonMenu2></Li>
+            </Ul>
         </HeaderContainer>
     )
 }
