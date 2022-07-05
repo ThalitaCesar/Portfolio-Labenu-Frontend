@@ -38,11 +38,12 @@ background-size:50%;
 height: 100vh;
 
 @media(max-width: 1020px) {
-    background-size:80%;
+    background-size:150%;
     background-position: top right;
   };
   @media(max-width: 450px) {
-    background-size:80%;
+    background-position: top;
+    background-size:150%;
   }
 
 `
@@ -78,8 +79,9 @@ font-style: normal;
 font-weight: 450;
 font-size: 24px;
 color: #4D5BCE;
-@media(max-width: 450px) {
+@media(max-width: 850px) {
     font-size: 14px;
+    color: #43D9AD;
   }
 `
 
