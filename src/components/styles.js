@@ -86,7 +86,7 @@ div {
 
 export const Li = styled.li`
 list-style-type: none;
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   text-align: start;
   margin: 0px;
 }
@@ -110,7 +110,7 @@ color: #607B96;
 &:hover {
     color: #E5E9F0;
   };
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     border: none;
     color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
   }
@@ -128,7 +128,8 @@ color: #607B96;
     color: #E5E9F0;
   };
 `;
-export const ButtonMenuLogo = styled.button`
+
+export const Span5 = styled.span`
 background-color: transparent;
 border:none;
 border-right: 1px solid #1E2D3D;
@@ -136,11 +137,27 @@ padding:10px;
 font-size:16px;
 text-decoration:none;
 color: #607B96;
+@media screen and (max-width: 1200px) {
+  display: none;
+}
+`;
+export const ButtonMenuLogo = styled.button`
+display:flex;
+background-color: transparent;
+border:none;
+border-right: 1px solid #1E2D3D;
+padding:10px;
+align-items: flex-start;
+width: 300px;
+font-size:16px;
+text-decoration:none;
+color: #607B96;
 &:hover {
     color: #E5E9F0;
   };
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
       display: block;
+      border-right: none;
   }
 `
 export const Link1 = styled.a`
@@ -166,7 +183,7 @@ color: #607B96;
 &:hover {
     color: #E5E9F0;
   };
-  @media(max-width: 700px) {
+  @media(max-width: 768px) {
     border-right: 1px solid #1E2D3D;
   }
 `
@@ -183,7 +200,7 @@ color: #607B96;
 &:hover {
     color: #E5E9F0;
   };
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     border: none;
     color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
 
@@ -193,6 +210,229 @@ color: #607B96;
 export const ButtonGroup2 = styled.div`
 display: flex;
 flex-direction: row;
+`
 
+export const AsideSideInfoContainer = styled.aside`
+width: 299px;
+border-right: 1px solid #1E2D3D;
+display: flex;
+flex-direction: rows;
+@media screen and (max-width: 820px) {
+  flex-direction: column;
+  border-right: none;
+  width: 85vw;
+  border-bottom: 1px solid #1E2D3D;
+}
+`
 
+export const MenuAboutMe = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+`
+
+export const ListaAboutMe = styled.button`
+background-color: transparent;
+border:none;
+padding-left: 10px;
+padding-top: 10px;
+font-size:16px;
+color: #607B96;
+&:hover {
+    color: #FFFFFF;
+  };
+
+`
+export const MenuIcons = styled.div`
+padding-left: 10px;
+padding-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+border-right: 1px solid #1E2D3D;
+@media screen and (max-width: 820px) {
+  flex-direction: row;
+  border-right: none;
+  border-bottom: 1px solid #1E2D3D;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 414px) {
+  width: 83vw;
+  border-bottom: 1px solid #1E2D3D;
+}
+`
+
+export const TextBox = styled.div`
+
+padding: 40px;
+`
+
+export const NumberOfLines = styled.span`
+
+`
+export const SpanCode = styled.span`
+@media screen and (max-width: 1280px) {
+  display:none;
+}
+`
+export const ResponsiveText = styled.p`
+display:none;
+@media screen and (max-width: 1280px) {
+  display: block;
+}
+`
+
+export const LinesContainer = styled.div`
+padding-top: 40px;
+padding-left:20px;
+display: flex;
+flex-direction: column;
+@media screen and (max-width: 1280px) {
+  display:none;
+}
+
+`
+//education
+
+export const ContainerInfoEducation = styled.div`
+display:flex;
+flex-direction: row;
+align-itmes:center;
+justify-content: center;
+overflow: auto;
+height: 68vh;
+padding:20px;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 912px) {
+  height: 68vh;
+  width: 84vw;
+}
+@media screen and (max-width: 768px) {
+  height: 58vh;
+}
+@media screen and (max-width: 375px) {
+  height: 48vh;
+}
+`
+export const CardFlex = styled.div`
+display:flex;
+flex-direction: row;
+@media screen and (max-width: 1024px) {
+  flex-direction: column;
+  padding-left:5px;
+}
+@media screen and (max-width: 375px) {
+  padding: 0;
+}
+
+`
+
+export const Card = styled.div`
+width: 280px;
+height: 420px;
+background: #011221;
+border: 1px solid #1E2D3D;
+border-radius: 15px;
+margin-right: 30px;
+@media screen and (max-width: 1024px) {
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  padding: 0;
+}
+`
+export const CardImg = styled.img`
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+
+`
+export const CardContent = styled.div`
+padding:20px;
+
+`
+export const SpanTitleCard = styled.span`
+font-family: 'Fira Code';
+font-style: normal;
+font-weight: 450;
+font-size: 16px;
+line-height: 21px;
+color: #607B96;
+`
+export const CardText = styled.p`
+
+`
+export const Time = styled.p`
+font-size: 16px;
+text-align: center;
+color: #FFFFFF;
+
+`
+export const Description = styled.p`
+
+`
+export const CardTitle = styled.p`
+font-size: 16px;
+color: #5565E8;
+text-align: center;
+
+`
+
+export const ContainerInfoExperiences = styled.div`
+display:flex;
+flex-direction: row;
+overflow: auto;
+height: 70vh;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 768px) {
+  height: 60vh;
+}
+@media screen and (max-width: 375px) {
+  height: 50vh;
+}
+`
+
+export const ContainerInfoHobbies = styled.div`
+display:flex;
+flex-direction: row;
+overflow: auto;
+height: 70vh;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 768px) {
+  height: 60vh;
+}
+@media screen and (max-width: 375px) {
+  height: 50vh;
+}
 `

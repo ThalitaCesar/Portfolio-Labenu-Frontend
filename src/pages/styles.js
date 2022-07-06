@@ -15,7 +15,7 @@ border: 1px solid #1E2D3D;
 border-radius: 8px;
 margin:auto;
 margin-top:25px;
-@media(max-width: 1020px) {
+@media(max-width: 1024px) {
     width: 90vw;
     height: 94vh;
     margin:auto;
@@ -47,10 +47,26 @@ height: 100vh;
   }
 
 `
+
+export const AboutMeContainer = styled.div `
+display:flex;
+justify-content: start;
+height: 100vh;
+
+ @media screen and (max-width: 850px) {
+  flex-direction: column;
+ }
+
+`
 export const HomeInfo = styled.div `
 display:flex;
 flex-direction: column;
 justify-content: center;
+@media(max-width: 1024px) {
+  align-items: center;
+  margin: 10px;
+  padding:10px;
+}
 @media(max-width: 450px) {
     align-items: center;
     margin: 10px;
@@ -65,20 +81,30 @@ color: #E5E9F0;
 @media(max-width: 450px) {
     font-size: 12px;
   }
+  @media(max-width: 1024px) {
+    font-size: 12px;
+  }
 `
 export const Text2 = styled.span `
 font-style: normal;
 font-size: 52px;
 color: #E5E9F0;
+@media(max-width: 1024px) {
+  font-size: 42px;
+}
 @media(max-width: 450px) {
     font-size: 42px;
   }
+
 `
 export const Text3 = styled.span `
 font-style: normal;
 font-weight: 450;
 font-size: 24px;
 color: #4D5BCE;
+@media(max-width: 1024px) {
+  font-size: 14px;
+}
 @media(max-width: 850px) {
     font-size: 14px;
     color: #43D9AD;
@@ -90,6 +116,9 @@ font-style: normal;
 font-size: 16px;
 line-height: 24px;
 color: #E5E9F0;
+@media(max-width: 1024px) {
+  font-size: 16px;
+}
 @media(max-width: 450px) {
     font-size: 16px;
   }
@@ -99,6 +128,9 @@ font-style: normal;
 font-weight: 450;
 font-size: 16px;
 color: #607B96;
+@media(max-width: 1024px) {
+  font-size: 12px;
+}
 @media(max-width: 450px) {
     font-size: 10px;
   }
@@ -106,6 +138,9 @@ color: #607B96;
 export const Span1 = styled.span `
 font-size: 16px;
 color: #4D5BCE;
+@media(max-width: 1024px) {
+  font-size: 10px;
+}
 @media(max-width: 450px) {
     font-size: 10px;
   }
@@ -113,6 +148,9 @@ color: #4D5BCE;
 export const Span2 = styled.span `
 font-size: 16px;
 color: #43D9AD;
+@media(max-width: 1024px) {
+  font-size: 10px;
+}
 @media(max-width: 450px) {
     font-size: 10px;
   }
@@ -121,6 +159,9 @@ export const Span3 = styled.a`
 font-size: 16px;
 color: #E99287;
 text-decoration: none;
+@media(max-width: 1024px) {
+  font-size: 10px;
+}
 @media(max-width: 450px) {
     font-size: 10px;
   }
@@ -135,10 +176,35 @@ justify-content: center;
 export const ContainerGame = styled.div`
 display:flex;
 flex-direction: column;
-@media(max-width: 1020px) {
+@media(max-width: 1024px) {
    display:none
   };
   @media(max-width: 450px) {
     display:none;
   }
+`
+
+export const ContainerInfo = styled.div`
+display:flex;
+flex-direction: row;
+overflow: auto;
+height: 70vh;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 768px) {
+  height: 60vh;
+}
+@media screen and (max-width: 375px) {
+  height: 50vh;
+}
+
 `

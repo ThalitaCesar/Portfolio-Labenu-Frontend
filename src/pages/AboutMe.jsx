@@ -1,17 +1,20 @@
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { HelloContainer, Pages } from "./styles";
+import { SideBarInfo } from "../components/SideBarInfo";
+import { AboutMeContainer, Pages, ContainerInfo } from "./styles";
 
 
 
 export function AboutMe(){
+
+    
     return(
             <Pages>
             <Header/>
-            <HelloContainer>
-            AboutMe
-            </HelloContainer>
+            <AboutMeContainer>
+            <SideBarInfo/>
+            </AboutMeContainer>
            <Footer/>
            </Pages>
     )

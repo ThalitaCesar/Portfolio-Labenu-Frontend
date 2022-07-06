@@ -1,5 +1,5 @@
 import { FooterContainer, Link1, Link2 } from "./styles";
-import { HeaderContainer, ButtonGroup1, ButtonGroup2, ButtonMenuFooter, ButtonMenu2 } from "./styles";
+import { HeaderContainer, ButtonGroup1, ButtonGroup2, ButtonMenuFooter, Span5} from "./styles";
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin} from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
@@ -14,7 +14,7 @@ export function Footer() {
             </ButtonGroup1>
 
             <ButtonGroup2>
-            <Link2 href="https://github.com/ThalitaCesar" target="_blank" > <GoMarkGithub/></Link2>
+            <Link2 href="https://github.com/ThalitaCesar" target="_blank" > <Span5>@ThalitaCesar</Span5> <GoMarkGithub/></Link2>
             </ButtonGroup2>
         </FooterContainer>
     )
