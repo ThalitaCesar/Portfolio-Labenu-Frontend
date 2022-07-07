@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Blur from '../assets/Blur.png'
+import Blur from '../assets/Blur.png';
+import react from '../assets/reactjs-icon.png'
 import ContainerSnake from '../assets/BackgroundSnake.png'
 
 export const Pages = styled.div`
@@ -48,13 +49,40 @@ height: 100vh;
 
 `
 
+export const ProjectsContainer = styled.div `
+display:flex;
+justify-content: space-evenly;
+background-image: url(${react});
+background-repeat: no-repeat;
+background-position: right;
+background-size:50%;
+height: 100vh;
+
+@media(max-width: 1020px) {
+    background-size:150%;
+    background-position: top right;
+  };
+  @media(max-width: 450px) {
+    background-position: top;
+    background-size:150%;
+  }
+
+`
+
 export const AboutMeContainer = styled.div `
 display:flex;
 justify-content: start;
 height: 100vh;
+background-image: url(${react});
+background-repeat: no-repeat;
+background-position: right;
+background-size:50%;
 
  @media screen and (max-width: 850px) {
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:100%;
  }
 
 `
@@ -167,6 +195,15 @@ text-decoration: none;
   }
 `
 
+export const TitleInfo = styled.p`
+
+font-size: 26px;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+`
+
+
 export const Snake = styled.span `
 display:flex;
 flex-direction: column;
@@ -207,4 +244,67 @@ height: 70vh;
   height: 50vh;
 }
 
+`
+
+export const ContainerInfoAbout = styled.div`
+display:flex;
+flex-direction: column;
+text-align:center;
+max-width: 400px;
+overflow: auto;
+height: 70vh;
+align-items: center;
+justify-content:center;
+padding-left: 280px;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 1024px) {
+  height: 44vh;
+  padding: 105px;
+}
+@media screen and (max-width: 912px) {
+  height: 44vh;
+  padding: 55px;
+}
+@media screen and (max-width: 820px) {
+  height: 44vh;
+  padding: 155px;
+}
+@media screen and (max-width: 768px) {
+  height: 35vh;
+}
+
+@media screen and (max-width: 700px) {
+  height: 50vh;
+  padding: 5px;
+}
+@media screen and (max-width: 540px) {
+  height: 40vh;
+  padding: 45px;
+}
+@media screen and (max-width: 375px) {
+  height: 35vh;
+  padding-left: 20px;
+}
+@media screen and (max-width: 300px) {
+  height: 35vh;
+  padding-left: 0px;
+}
+
+`
+
+export const FlexAbout= styled.div`
+display:flex;
+flex-direction: column,
+text-align:center;
+max-width: 400px;
 `

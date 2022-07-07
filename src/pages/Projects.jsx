@@ -1,15 +1,15 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { HelloContainer, Pages } from "./styles";
+import {  Pages, ProjectsContainer } from "./styles";
 
 
 export function Projects(){
     return(
             <Pages>
             <Header/>
-            <HelloContainer>
+            <ProjectsContainer>
                 Projetos
-            </HelloContainer>
+            </ProjectsContainer>
            <Footer/>
            </Pages>
     )
