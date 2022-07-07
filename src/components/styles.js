@@ -109,6 +109,7 @@ text-decoration:none;
 color: #607B96;
 &:hover {
     color: #E5E9F0;
+    border-bottom: 3px solid #FEA55F;
   };
   @media screen and (max-width: 768px) {
     border: none;
@@ -197,9 +198,14 @@ padding: 10px;
 font-size:16px;
 text-decoration:none;
 color: #607B96;
-&:hover {
+&:hover{
     color: #E5E9F0;
-  };
+    border-bottom: 3px solid #FEA55F;
+  }
+  &:visited{
+    color: #E5E9F0;
+    border-bottom: 3px solid #FEA55F;
+  }
   @media screen and (max-width: 768px) {
     border: none;
     color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};

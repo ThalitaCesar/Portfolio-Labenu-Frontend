@@ -14,7 +14,7 @@ export function Hello(){
                 <HomeInfo>
                 <Text1>Olá galera, eu sou <br></br>
                 <Text2>Thalita César</Text2><br></br>
-                <Text3> > Desenvolvedora Front-end</Text3> 
+                <Text3> > Desenvolvedora Frontend</Text3> 
                 </Text1>
 
                 <Text4>

@@ -55,7 +55,7 @@ export function Bio() {
                     <SpanCode>* </SpanCode> <br></br>
                     <SpanCode>* </SpanCode> Sou apaixonada pelo CSS e tenho familiaridade com Styled Components e Material Ui.<SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> Atualmente estou me especializando em React.js. Porém, estou aberta a aprender <SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode> novas tacnologias. <SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> novas tecnologias. <SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> <br></br>
                     <SpanCode>* </SpanCode> Penso em questões como: a inclusão que a tecnologia leva ao mundo e o acesso público<SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> ao que antes era para poucos.<SpanCode><br></br> </SpanCode> 
