@@ -222,6 +222,7 @@ flex-direction: rows;
   border-right: none;
   width: 85vw;
   border-bottom: 1px solid #1E2D3D;
+  padding-bottom:20px;
 }
 `
 
@@ -317,6 +318,8 @@ padding:20px;
 @media screen and (max-width: 912px) {
   height: 68vh;
   width: 84vw;
+  padding:0px;
+  padding-top:20px;
 }
 @media screen and (max-width: 768px) {
   height: 58vh;
@@ -330,6 +333,7 @@ display:flex;
 flex-direction: row;
 @media screen and (max-width: 1024px) {
   flex-direction: column;
+  padding-left:5px;
   padding-left:5px;
 }
 @media screen and (max-width: 375px) {
@@ -411,6 +415,13 @@ height: 70vh;
 @media screen and (max-width: 375px) {
   height: 50vh;
 }
+`
+
+export const TextExperiences = styled.p`
+padding-top: 40px;
+padding-left: 40px;
+padding-right: 40px;
+
 `
 
 export const ContainerInfoHobbies = styled.div`

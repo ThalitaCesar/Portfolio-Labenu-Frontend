@@ -44,7 +44,7 @@ export function CardEducation() {
             {/* <Slider {...settings}> */}
             <CardFlex>
             <Card>
-                <CardImg src={cev} style={{maxWidth:"280px"}}/>
+                <CardImg src={cev} style={{maxWidth:"280px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Cursos Avulsos
