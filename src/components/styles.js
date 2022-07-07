@@ -32,6 +32,7 @@ export const Ul = styled.ul`
 margin-top: -15px;
 margin-bottom: -15px;
 display: flex;
+
     
     @media (max-width: 768px) {
       flex-flow: column nowrap;
@@ -202,10 +203,7 @@ color: #607B96;
     color: #E5E9F0;
     border-bottom: 3px solid #FEA55F;
   }
-  &:visited{
-    color: #E5E9F0;
-    border-bottom: 3px solid #FEA55F;
-  }
+
   @media screen and (max-width: 768px) {
     border: none;
     color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
