@@ -55,7 +55,7 @@ justify-content: space-evenly;
 background-image: url(${react});
 background-repeat: no-repeat;
 background-position: right;
-background-size:50%;
+background-size:40%;
 height: 100vh;
 
 @media(max-width: 1020px) {
@@ -76,7 +76,7 @@ height: 100vh;
 background-image: url(${react});
 background-repeat: no-repeat;
 background-position: right;
-background-size:50%;
+background-size:40%;
 
  @media screen and (max-width: 850px) {
   flex-direction: column;

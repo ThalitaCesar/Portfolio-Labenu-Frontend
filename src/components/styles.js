@@ -32,6 +32,7 @@ export const Ul = styled.ul`
 margin-top: -15px;
 margin-bottom: -15px;
 display: flex;
+
     
     @media (max-width: 768px) {
       flex-flow: column nowrap;
@@ -202,10 +203,7 @@ color: #607B96;
     color: #E5E9F0;
     border-bottom: 3px solid #FEA55F;
   }
-  &:visited{
-    color: #E5E9F0;
-    border-bottom: 3px solid #FEA55F;
-  }
+
   @media screen and (max-width: 768px) {
     border: none;
     color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
@@ -273,6 +271,7 @@ border-right: 1px solid #1E2D3D;
 export const TextBox = styled.div`
 
 padding: 40px;
+
 `
 
 export const NumberOfLines = styled.span`
@@ -433,8 +432,9 @@ padding-right: 40px;
 export const ContainerInfoHobbies = styled.div`
 display:flex;
 flex-direction: row;
+justify-content: space-between;
 overflow: auto;
-height: 70vh;
+height: 80vh;
 ::-webkit-scrollbar-track {
   background-color: #011221;
 }
@@ -446,10 +446,52 @@ height: 70vh;
   background: #607B96;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
+  flex-direction: column;
+  height: 70vh;
+}
+@media screen and (max-width: 700px) {
+  flex-direction: column;
   height: 60vh;
 }
+
 @media screen and (max-width: 375px) {
   height: 50vh;
 }
+`
+export const HobbiesTextContainer = styled.div`
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+min-width: 500px;
+@media screen and (max-width: 500px) {
+  min-width: 300px;
+}
+`
+
+export const ScrollBarVsCode = styled.div`
+width: 16.5px;
+border-left: 1px solid #1E2D3D;
+border-right: 1px solid #1E2D3D;
+display:flex;
+flex-direction: column;
+@media screen and (max-width: 900px) {
+  display:none;
+}
+
+`
+
+export const Scrol = styled.div`
+margin-top: 10px;
+width: 16.5px;
+height: 7px;
+background: #607B96;
+`
+
+export const ContainerCode = styled.div`
+padding: 10px;
+background: rgb(2,18,33);
+border: 1px solid #1E2D3D;
+border-radius: 15px;
+
 `

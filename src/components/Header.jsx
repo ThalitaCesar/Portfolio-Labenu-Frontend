@@ -37,11 +37,12 @@ export function Header() {
               <div />
               <div />   
               </Hamburguer>
-            <Ul open={open}>       
-            <Li><ButtonMenu onClick={goToHello}>_ola</ButtonMenu></Li>
+            <Ul open={open}>   
+            <Li><ButtonMenu onClick={goToHello}> _ola</ButtonMenu></Li>
             <Li><ButtonMenu onClick={goToAboutMe}>_sobre-mim</ButtonMenu></Li>
             <Li><ButtonMenu onClick={goToProjects}>_projetos</ButtonMenu></Li> 
             <Li><ButtonMenu2 onClick={goToContact}>_contato</ButtonMenu2></Li>
+            
             </Ul>
         </HeaderContainer>
     )
