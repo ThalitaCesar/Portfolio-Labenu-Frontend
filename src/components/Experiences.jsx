@@ -17,7 +17,7 @@ export function Experiences() {
                     <ContainerInfoExperiences>
                         <TextExperiences>
                         <span style={{color: "#607B96"}}>
-                        <span style={{color: "#5565E8"}}>const</span> <span style={{color: "#43D9AD"}}> ArrExpeciences</span>  <span style={{color: "#FFFFFF"}}>=</span>  <span style={{color: "#C98BDF"}}>[ </span> <br></br>
+                        <span style={{color: "#5565E8"}}>const</span> <span style={{color: "#43D9AD"}}> arrExpeciences</span>  <span style={{color: "#FFFFFF"}}>=</span>  <span style={{color: "#C98BDF"}}>[ </span> <br></br>
                         <span style={{color: "#FEA55F"}}>&#123; </span>
                          <br></br>
                          <span style={{color: "#43D9AD"}}> Empresa: </span>  <span style={{color: "#C98BDF"}}>'Hirix'</span>, <br></br>
