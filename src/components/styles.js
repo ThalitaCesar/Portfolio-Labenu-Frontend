@@ -317,13 +317,14 @@ flex-direction: column;
 
 export const ContainerInfoEducation = styled.div`
 display:flex;
-flex-direction: row;
+flex-direction: column;
 align-itmes:center;
 justify-content: center;
-overflow: auto;
-height: 68vh;
+overflow-x: auto;
+height: 70vh;
 padding-top:20px;
 overflow-x: hidden;
+padding-left:30px;
 ::-webkit-scrollbar-track {
   background-color: #011221;
 }
@@ -345,40 +346,35 @@ overflow-x: hidden;
   height: 58vh;
 }
 @media screen and (max-width: 500px) {
-  height: 40vh;
+  height: 50vh;
 }
 @media screen and (max-width: 375px) {
   height: 40vh;
 }
 `
 export const CardFlex = styled.div`
-display:flex;
-flex-direction: row;
-@media screen and (max-width: 1024px) {
-  flex-direction: column;
-  padding-left:5px;
-  padding-left:5px;
+@media screen and (max-width: 912px) {
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  margin-top: 240px;
+ 
+}
+@media screen and (max-width: 500px) {
+  margin-top: 940px;
+
 }
 @media screen and (max-width: 375px) {
-  padding: 0;
+  margin-top: 1040px;
 }
-
 `
 
 export const Card = styled.div`
-max-width: 230px;
+width: 260px;
 height: 420px;
 background: #011221;
 border: 1px solid #1E2D3D;
 border-radius: 15px;
-margin-right: 50px;
-@media screen and (max-width: 1024px) {
-  margin-right: 0px;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 375px) {
-  padding: 0;
-}
 `
 export const CardImg = styled.img`
 border-top-left-radius: 15px;

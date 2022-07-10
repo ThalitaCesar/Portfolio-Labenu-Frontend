@@ -2,15 +2,19 @@ import { Card, CardContent, CardImg, CardText, CardTitle, SpanTitleCard, Time, D
 import labenu from '../assets/labenulogo.png'
 import cev from '../assets/cev-logo.png'
 import senac from '../assets/senac-logo.jpg'
+import Grid from '@material-ui/core/Grid';
+import Item from '@material-ui/core/Grid';
 
 
 export function CardEducation() {
   
     return (
-        <div>
-          <CardFlex>
-            <Card>
-                <CardImg src={cev} style={{maxWidth:"230px", minHeight:"148px"}}/>
+        <CardFlex>
+        <Grid container spacing={2} style={{paddingLeft: "30px"}}>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>
+          <Card>
+                <CardImg src={cev} style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Cursos Avulsos
@@ -26,9 +30,12 @@ export function CardEducation() {
                     </CardText>
                 </CardContent>
             </Card>
-
-            <Card>
-                <CardImg src={senac} style={{maxWidth:"230px", minHeight:"148px"}}/>
+          </Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>
+          <Card>
+                <CardImg src={senac} style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Técnico em Informática
@@ -45,8 +52,12 @@ export function CardEducation() {
                 </CardContent>
             </Card>
 
-            <Card>
-                <CardImg src={labenu} style={{maxWidth:"230px", minHeight:"148px"}}/>
+          </Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Item>
+          <Card>
+                <CardImg src={labenu} style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Full Stack Developer Noturno 
@@ -62,7 +73,9 @@ export function CardEducation() {
                     </CardText>
                 </CardContent>
             </Card>
-            </CardFlex>
-        </div>
+          </Item>
+        </Grid>
+      </Grid>
+      </CardFlex>
     )
 }
