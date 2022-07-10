@@ -35,19 +35,33 @@ display: flex;
 
     
     @media (max-width: 768px) {
+      margin: 0;
       flex-flow: column nowrap;
       position: fixed;
       transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
       text-align: start;
       top: 55px;
-      left: 0px;
-      right:0px;
+      left: 5px;
+      right:5px;
       width: 74vw;
       height: 79vh;
-      margin-left: 25px;
+      margin-left: 22px;
       margin-top: 20px;
       background-color: ${({ open }) => open ? '#011627' : 'transparent'};
       transition: transform 0.3s ease-in-out;}
+      @media (max-width: 400px) {
+        right:0px;
+        margin-left: 30px;
+      }
+      @media (max-width: 394px) {
+        margin-left: 28px;
+      }
+      @media (max-width: 375px) {
+        margin-left: 25px;
+      }
+      @media (max-width: 360px) {
+        margin-left: 21px;
+      }
   
 `;
 
@@ -308,7 +322,8 @@ align-itmes:center;
 justify-content: center;
 overflow: auto;
 height: 68vh;
-padding:20px;
+padding-top:20px;
+overflow-x: hidden;
 ::-webkit-scrollbar-track {
   background-color: #011221;
 }
@@ -329,8 +344,11 @@ padding:20px;
 @media screen and (max-width: 768px) {
   height: 58vh;
 }
+@media screen and (max-width: 500px) {
+  height: 40vh;
+}
 @media screen and (max-width: 375px) {
-  height: 48vh;
+  height: 40vh;
 }
 `
 export const CardFlex = styled.div`
@@ -348,12 +366,12 @@ flex-direction: row;
 `
 
 export const Card = styled.div`
-width: 280px;
+max-width: 230px;
 height: 420px;
 background: #011221;
 border: 1px solid #1E2D3D;
 border-radius: 15px;
-margin-right: 30px;
+margin-right: 50px;
 @media screen and (max-width: 1024px) {
   margin-right: 0px;
   margin-bottom: 30px;
@@ -383,15 +401,15 @@ export const CardText = styled.p`
 
 `
 export const Time = styled.p`
-font-size: 16px;
+font-size: 14px;
 text-align: center;
 color: #FFFFFF;
 
 `
 export const Description = styled.p`
-
+font-size: 14px;
 `
-export const CardTitle = styled.p`
+export const CardTitle = styled.h3`
 font-size: 16px;
 color: #5565E8;
 text-align: center;
@@ -417,8 +435,11 @@ height: 70vh;
 @media screen and (max-width: 768px) {
   height: 60vh;
 }
+@media screen and (max-width: 500px) {
+  height: 48vh;
+}
 @media screen and (max-width: 375px) {
-  height: 50vh;
+  height: 48vh;
 }
 `
 
@@ -452,11 +473,14 @@ height: 80vh;
 }
 @media screen and (max-width: 700px) {
   flex-direction: column;
-  height: 60vh;
+  height: 50vh;
+}
+@media screen and (max-width: 500px) {
+  height: 48vh;
 }
 
 @media screen and (max-width: 375px) {
-  height: 50vh;
+  height: 48vh;
 }
 `
 export const HobbiesTextContainer = styled.div`

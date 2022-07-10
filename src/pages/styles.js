@@ -240,8 +240,14 @@ height: 70vh;
 @media screen and (max-width: 768px) {
   height: 60vh;
 }
+@media screen and (max-width: 768px) {
+  height: 60vh;
+}
+@media screen and (max-width: 500px) {
+  height: 48vh;
+}
 @media screen and (max-width: 375px) {
-  height: 50vh;
+  height: 48vh;
 }
 
 `
@@ -288,7 +294,7 @@ padding-left: 280px;
   padding: 5px;
 }
 @media screen and (max-width: 540px) {
-  height: 40vh;
+  height: 35vh;
   padding: 45px;
 }
 @media screen and (max-width: 375px) {

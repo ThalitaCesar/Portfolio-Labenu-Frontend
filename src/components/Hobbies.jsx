@@ -42,21 +42,21 @@ export function Hobbies() {
                         // sobre-mim / hobbies e +
                         </ResponsiveText>
                     <SpanCode>/** </SpanCode> <br></br>
-                    <SpanCode>* </SpanCode> Antes da Programação <br></br>
+                    <SpanCode>* </SpanCode> Thalita antes da programação <br></br>
                     <SpanCode>* </SpanCode> <br></br>
-                    <SpanCode>* </SpanCode> Me formei em 2013 em marketing<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode>e com o objetivo de ajudar as<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode>  pessoas entrei no curso de<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode>  serviço social. Paralelamente <SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> Me formei em marketing em 2013<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> e com o objetivo de ajudar as<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> pessoas iniciei no curso de<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> serviço social. Paralelamente <SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> trabalhava na área administrativa.<SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> <br></br>
                     <SpanCode>* </SpanCode> Estando insatisfeita e sem<br></br>
                     <SpanCode>* </SpanCode> perspectiva de crescimento,<br></br>
                     <SpanCode>* </SpanCode> ainda encontrando um trabalho <SpanCode><br></br> </SpanCode> 
                     <SpanCode>* </SpanCode> voluntário onde já podia  ajudar<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode> as pessoas decidi aos 27 fazer uma<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode> transição de carreira para a área<SpanCode><br></br> </SpanCode> 
-                    <SpanCode>* </SpanCode>de tecnologia.<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> as pessoas decidi aos 27 anos<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> iniciar a transição de carreira<SpanCode><br></br> </SpanCode> 
+                    <SpanCode>* </SpanCode> para a área da tecnologia.<SpanCode><br></br> </SpanCode> 
                     <SpanCode>*/ </SpanCode>
                         </TextBox>
 
@@ -72,7 +72,7 @@ export function Hobbies() {
                         <span style={{color: "#E99287 "}}>let</span> <span style={{color: "#43D9AD"}}> hobbies</span>  <span style={{color: "#FFFFFF"}}>=</span>  <span style={{color: "#C98BDF"}}>[ </span> <br></br>
                          <br></br>
                          <p>// lista do que faço nas horas vagas</p>
-                         <span style={{color: "#FEA55F"}}>'Desenho'</span>, <br></br>
+                         <span style={{color: "#FEA55F"}}>'desenho'</span>, <br></br>
                         <span style={{color: "#FEA55F"}}>'escrever poesias e poemas' </span>, <br></br>
                          <span style={{color: "#FEA55F"}}>'fotografia'</span> , <br></br>
                          <span style={{color: "#FEA55F"}}>'ler'</span> , <br></br>
