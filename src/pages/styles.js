@@ -314,3 +314,35 @@ flex-direction: column,
 text-align:center;
 max-width: 400px;
 `
+
+
+export const ContainerInfoH = styled.div`
+display:flex;
+flex-direction: row;
+overflow: auto;
+height: 100%;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 375px) {
+
+}
+
+`

@@ -49,7 +49,7 @@ display: flex;
       margin-top: 20px;
       background-color: ${({ open }) => open ? '#011627' : 'transparent'};
       transition: transform 0.3s ease-in-out;}
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         right:0px;
         margin-left: 30px;
       }
