@@ -15,7 +15,9 @@
     "react-router-dom": "^6.3.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "surge": "^0.23.1",
+    "vercel": "^27.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

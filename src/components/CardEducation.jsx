@@ -2,53 +2,18 @@ import { Card, CardContent, CardImg, CardText, CardTitle, SpanTitleCard, Time, D
 import labenu from '../assets/labenulogo.png'
 import cev from '../assets/cev-logo.png'
 import senac from '../assets/senac-logo.jpg'
-import Slider from "react-slick";
+
 
 export function CardEducation() {
-    let settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
+  
     return (
         <div>
-            {/* <Slider {...settings}> */}
-            <CardFlex>
+          <CardFlex>
             <Card>
-                <CardImg src={cev} style={{maxWidth:"280px", minHeight:"168px"}}/>
+                <CardImg src={cev} style={{maxWidth:"230px", minHeight:"148px"}}/>
                 <CardContent>
                     <CardTitle>
                     Cursos Avulsos
-                    <SpanTitleCard> // curso-em-video</SpanTitleCard>
                     </CardTitle>
                     <CardText>
                         <Time>
@@ -63,11 +28,10 @@ export function CardEducation() {
             </Card>
 
             <Card>
-                <CardImg src={senac} style={{maxWidth:"280px", minHeight:"168px"}}/>
+                <CardImg src={senac} style={{maxWidth:"230px", minHeight:"148px"}}/>
                 <CardContent>
                     <CardTitle>
                     Técnico em Informática
-                    <SpanTitleCard> // senac</SpanTitleCard>
                     </CardTitle>
                     <CardText>
                         <Time>
@@ -82,11 +46,10 @@ export function CardEducation() {
             </Card>
 
             <Card>
-                <CardImg src={labenu} style={{maxWidth:"280px", minHeight:"168px"}}/>
+                <CardImg src={labenu} style={{maxWidth:"230px", minHeight:"148px"}}/>
                 <CardContent>
                     <CardTitle>
-                    Desenvolvimento Web Full Stack Noturno 
-                    <SpanTitleCard> // labenu</SpanTitleCard>
+                    Full Stack Developer Noturno 
                     </CardTitle>
                     <CardText>
                         <Time>
@@ -100,7 +63,6 @@ export function CardEducation() {
                 </CardContent>
             </Card>
             </CardFlex>
-            {/* </Slider> */}
         </div>
     )
 }
