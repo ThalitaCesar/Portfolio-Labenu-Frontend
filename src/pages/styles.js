@@ -50,22 +50,19 @@ height: 100vh;
 `
 
 export const ProjectsContainer = styled.div `
-display:flex;
-justify-content: space-evenly;
+display:block;
+height: 100vh;
+margin-top: 20px;
 background-image: url(${react});
 background-repeat: no-repeat;
 background-position: right;
 background-size:40%;
-height: 100vh;
+ @media screen and (max-width: 850px) {
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:100%;
 
-@media(max-width: 1020px) {
-    background-size:150%;
-    background-position: top right;
-  };
-  @media(max-width: 450px) {
-    background-position: top;
-    background-size:150%;
-  }
 
 `
 

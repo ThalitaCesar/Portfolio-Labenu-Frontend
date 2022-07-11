@@ -2,7 +2,7 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { SideBarInfo } from "../components/SideBarInfo";
-import { AboutMeContainer, ContainerInfo, ContainerInfoH, Pages } from "../pages/styles";
+import { AboutMeContainer,ContainerInfoH, Pages } from "../pages/styles";
 import { ContainerInfoHobbies, HobbiesTextContainer,ContainerCode, LinesContainer, Scrol, NumberOfLines, ResponsiveText, ScrollBarVsCode, SpanCode, TextBox, TextExperiences} from './styles';
 
 
