@@ -49,7 +49,7 @@ display: flex;
       margin-top: 20px;
       background-color: ${({ open }) => open ? '#011627' : 'transparent'};
       transition: transform 0.3s ease-in-out;}
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         right:0px;
         margin-left: 30px;
       }
@@ -514,4 +514,88 @@ background: rgb(2,18,33);
 border: 1px solid #1E2D3D;
 border-radius: 15px;
 
+`
+
+export const CardProject = styled.div`
+box-sizing: border-box;
+position: absolute;
+background: #011221;
+border: 1px solid #1E2D3D;
+border-radius: 15px;
+width: 300px;
+height: 370px;
+
+`
+
+export const CardProjectMedia = styled.div`
+background-image: url("${(props) => props.backgroundUrl}");
+width: 300px;
+height: 150px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+`
+
+export const CardProjectIcon = styled.img`
+padding-left: 250px;
+padding-top: 6.04%;
+`
+
+export const CardProjectContent = styled.div`
+padding: 15px;
+
+`
+
+export const CardProjectDescription = styled.p`
+text-align: justify;
+
+`
+
+export const CardProjectButton = styled.button`
+border:none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 14px;
+background: #1C2B3A;
+border-radius: 8px;
+
+`
+
+export const CardProjectNumber = styled.p`
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color: #5565E8;
+`
+
+export const CardProjectTitle = styled.span`
+font-weight: 450;
+font-size: 16px;
+color: #607B96;
+
+`
+
+export const LinkP = styled.a`
+font-family: 'Fira Code';
+font-size: 14px;
+text-decoration:none;
+color: #E5E9F0;
+`
+
+export const CardProjectFlex = styled.div`
+display: flex;
+justify-content: center;
+@media screen and (max-width: 500px) {
+flex-direction: column;
+}
+`
+export const CardProjectDiv = styled.div`
+margin: 0px 80px;
+@media screen and (max-width: 900px) {
+  margin: 0px 0px;
+  margin-right: 70px;
+  }
+@media screen and (max-width: 500px) {
+  margin: 40px 0px;
+  }
 `

@@ -2,7 +2,7 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { SideBarInfo } from "../components/SideBarInfo";
-import { AboutMeContainer, ContainerInfo, Pages } from "../pages/styles";
+import { AboutMeContainer,ContainerInfoH, Pages } from "../pages/styles";
 import { ContainerInfoHobbies, HobbiesTextContainer,ContainerCode, LinesContainer, Scrol, NumberOfLines, ResponsiveText, ScrollBarVsCode, SpanCode, TextBox, TextExperiences} from './styles';
 
 
@@ -16,7 +16,7 @@ export function Hobbies() {
                     <SideBarInfo/>
                     <ContainerInfoHobbies>
                         <HobbiesTextContainer>
-                        <ContainerInfo>
+                        <ContainerInfoH>
                         <LinesContainer>
                     <NumberOfLines>1</NumberOfLines>
                     <NumberOfLines>2</NumberOfLines>
@@ -60,7 +60,7 @@ export function Hobbies() {
                     <SpanCode>*/ </SpanCode>
                         </TextBox>
 
-                    </ContainerInfo>
+                    </ContainerInfoH>
                         <ScrollBarVsCode>
                                 <Scrol></Scrol>
                         </ScrollBarVsCode>

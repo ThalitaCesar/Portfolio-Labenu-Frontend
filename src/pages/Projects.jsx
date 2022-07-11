@@ -1,6 +1,8 @@
+import { CardProjects } from "../components/CardProjects";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import {  Pages, ProjectsContainer } from "./styles";
+
 
 
 export function Projects(){
@@ -8,7 +10,7 @@ export function Projects(){
             <Pages>
             <Header/>
             <ProjectsContainer>
-                Projetos
+               <CardProjects/>
             </ProjectsContainer>
            <Footer/>
            </Pages>
