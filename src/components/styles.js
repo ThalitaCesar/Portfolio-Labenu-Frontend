@@ -38,13 +38,13 @@ display: flex;
       margin: 0;
       flex-flow: column nowrap;
       position: fixed;
-      transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+      transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200%)'};
       text-align: start;
       top: 55px;
-      left: 5px;
-      right:5px;
-      width: 74vw;
-      height: 79vh;
+      left: 2px;
+      right:4px;
+      width: 74.6vw;
+      height: 80vh;
       margin-left: 22px;
       margin-top: 20px;
       background-color: ${({ open }) => open ? '#011627' : 'transparent'};
@@ -518,7 +518,6 @@ border-radius: 15px;
 
 export const CardProject = styled.div`
 box-sizing: border-box;
-position: absolute;
 background: #011221;
 border: 1px solid #1E2D3D;
 border-radius: 15px;
@@ -585,17 +584,62 @@ color: #E5E9F0;
 export const CardProjectFlex = styled.div`
 display: flex;
 justify-content: center;
+overflow: auto;
+height: 70vh;
+::-webkit-scrollbar-track {
+  background-color: #011221;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #607B96;
+}
+
+@media screen and (max-width: 1280px) {
+  height: 70vh;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 820px) {
+  flex-direction: column;
+  height: 70vh;
+}
+@media screen and (max-width: 768px) {
+  padding-top:80px;
+  height: 70vh;
+}
+@media screen and (max-width: 540px) {
+  padding-left:10px;
+  padding-top: 250px;
+  height: 40vh;
+}
+
 @media screen and (max-width: 500px) {
-flex-direction: column;
+  padding-left:10px;
+  padding-top: 250px;
+  height: 48vh;
+}
+@media screen and (max-width: 375px) {
+  padding-top: 320px;
+  padding-left:0px;
+  height: 30vh;
+}
+
+@media screen and (max-width: 360px) {
+  padding-top: 320px;
+  padding-left:0px;
+  height: 35vh;
 }
 `
+
 export const CardProjectDiv = styled.div`
 margin: 0px 80px;
 @media screen and (max-width: 900px) {
-  margin: 0px 0px;
-  margin-right: 70px;
+  margin: 0px 30px;
+  margin-right: 40px;
   }
-@media screen and (max-width: 500px) {
-  margin: 40px 0px;
+@media screen and (max-width: 540px) {
+  margin: 10px 0px;
   }
 `

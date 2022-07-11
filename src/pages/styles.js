@@ -50,9 +50,10 @@ height: 100vh;
 `
 
 export const ProjectsContainer = styled.div `
-display:block;
+display:flex;
 height: 100vh;
 margin-top: 20px;
+margin:10px;
 background-image: url(${react});
 background-repeat: no-repeat;
 background-position: right;
