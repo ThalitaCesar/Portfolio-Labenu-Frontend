@@ -346,10 +346,10 @@ padding-left:30px;
   height: 58vh;
 }
 @media screen and (max-width: 500px) {
-  height: 50vh;
+  height: 58vh;
 }
 @media screen and (max-width: 375px) {
-  height: 40vh;
+  height: 50vh;
 }
 `
 export const CardFlex = styled.div`
@@ -472,11 +472,11 @@ height: 80vh;
   height: 50vh;
 }
 @media screen and (max-width: 500px) {
-  height: 48vh;
+  height: 60vh;
 }
 
 @media screen and (max-width: 375px) {
-  height: 48vh;
+  height: 55vh;
 }
 `
 export const HobbiesTextContainer = styled.div`
@@ -643,3 +643,31 @@ margin: 0px 80px;
   margin: 10px 0px;
   }
 `
+export const DropDownMenu = styled.button`
+border:none;
+background-color: transparent;
+font-family: 'Fira Code';
+font-size: 16px;
+color: #607B96;
+&:hover{
+  color: #FFFFFF;
+}
+
+`
+
+export const IconDrodown = styled.img`
+
+`
+
+export const DropdownContainer = styled.div`
+	@media screen and (min-width: 961px) {
+		position: relative;
+
+	}
+`;
+
+export const NavDropDown = styled.div`
+@media screen and (min-width: 961px) {
+	}
+`;
+

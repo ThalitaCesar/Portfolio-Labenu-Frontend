@@ -242,10 +242,10 @@ height: 70vh;
   height: 60vh;
 }
 @media screen and (max-width: 500px) {
-  height: 48vh;
+  height: 58vh;
 }
 @media screen and (max-width: 375px) {
-  height: 48vh;
+  height: 53vh;
 }
 
 `
