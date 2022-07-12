@@ -4,8 +4,9 @@ import IconBox from '../assets/IconBox.png'
 import cientik from '../assets/cientik.png'
 export function CardProjects() {
     return (
+
         <CardProjectFlex>
-            
+
         <CardProjectDiv>
             <CardProjectNumber>
             Projeto 1 

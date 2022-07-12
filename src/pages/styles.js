@@ -50,9 +50,10 @@ height: 100vh;
 `
 
 export const ProjectsContainer = styled.div `
-display:block;
+display:flex;
 height: 100vh;
 margin-top: 20px;
+margin:10px;
 background-image: url(${react});
 background-repeat: no-repeat;
 background-position: right;
@@ -241,10 +242,10 @@ height: 70vh;
   height: 60vh;
 }
 @media screen and (max-width: 500px) {
-  height: 48vh;
+  height: 58vh;
 }
 @media screen and (max-width: 375px) {
-  height: 48vh;
+  height: 53vh;
 }
 
 `
