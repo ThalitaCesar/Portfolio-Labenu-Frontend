@@ -39,10 +39,11 @@ export function DropdownMenu ({ currency, setCurrency }) {
 	return (
 		<DropdownContainer>
 			<DropDownMenu ref={ref} onClick={() => setShow(true)}>
-				<IconContext.Provider value={{ size: '1.3em', color: '#dfdfdf' }}>
+			Informações_pessoais
+				<IconContext.Provider value={{ size: '1.3em', color: '#607b96' }}>
 					<AiOutlineCaretDown onClick={() => closeDropdown}/>
 				</IconContext.Provider>
-                Informações_pessoais
+                
 			</DropDownMenu>
 			<DropdownList
 				listRef={listRef}

@@ -1,4 +1,4 @@
-export function FormProject() {
+export function FormContact() {
     return (
         <div>
         </div>

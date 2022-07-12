@@ -31,11 +31,11 @@ import { SiFiles } from 'react-icons/si';
         return (
             <AnimatePresence>
             {show && (
-                    <div initial={{ opacity: 0, height: '0%' }}
-					animate={{ opacity: 1, height: 'auto' }}
-					exit={{ opacity: 0 }}>
+            <div initial={{ opacity: 0, height: '0%' }}
+			animate={{ opacity: 1, height: 'auto' }}
+			exit={{ opacity: 0 }}>
             <NavDropDown ref={listRef}>
-                <ListaAboutMe onClick={goToBio} >
+            <ListaAboutMe onClick={goToBio} >
              <strong> > </strong> 
             <SiFiles style={{color: '#E99287'}}/>
             <span> bio</span> 

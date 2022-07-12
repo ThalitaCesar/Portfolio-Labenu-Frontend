@@ -376,9 +376,14 @@ background: #011221;
 border: 1px solid #1E2D3D;
 border-radius: 15px;
 `
-export const CardImg = styled.img`
+export const CardImg = styled.div`
+background-image: url("${(props) => props.backgroundUrl}");
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
+background-size: cover;
+background-position: center;
+width: 300px;
+height: 80px;
 
 `
 export const CardContent = styled.div`
@@ -537,6 +542,7 @@ border-top-right-radius: 15px;
 export const CardProjectIcon = styled.img`
 padding-left: 250px;
 padding-top: 6.04%;
+
 `
 
 export const CardProjectContent = styled.div`
@@ -644,6 +650,8 @@ margin: 0px 80px;
   }
 `
 export const DropDownMenu = styled.button`
+display:flex;
+aligh-items: center;
 border:none;
 background-color: transparent;
 font-family: 'Fira Code';
