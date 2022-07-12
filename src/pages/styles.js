@@ -199,6 +199,9 @@ font-size: 26px;
 text-align: center;
 color: #FFFFFF;
 text-decoration: none;
+@media(max-width: 450px) {
+  font-size: 20px;
+}
 `
 
 
@@ -285,15 +288,16 @@ padding-left: 280px;
 }
 @media screen and (max-width: 768px) {
   height: 35vh;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 700px) {
   height: 50vh;
-  padding: 5px;
+  padding: 0px;
 }
 @media screen and (max-width: 540px) {
   height: 35vh;
-  padding: 45px;
+  padding: 55px;
 }
 @media screen and (max-width: 375px) {
   height: 35vh;

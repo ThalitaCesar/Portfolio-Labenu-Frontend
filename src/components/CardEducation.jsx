@@ -1,20 +1,49 @@
-import { Card, CardContent, CardImg, CardText, CardTitle, SpanTitleCard, Time, Description, CardFlex  } from "./styles";
+import { Card, CardContent, CardImg, CardText, CardTitle, Time, Description} from "./styles";
 import labenu from '../assets/labenulogo.png'
 import cev from '../assets/cev-logo.png'
 import senac from '../assets/senac-logo.jpg'
-import Grid from '@material-ui/core/Grid';
-import Item from '@material-ui/core/Grid';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "../styles.css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+
 
 
 export function CardEducation() {
   
     return (
-        <CardFlex>
-        <Grid container spacing={2} style={{paddingLeft: "30px"}}>
-        <Grid item xs={12} sm={6} md={4}>
-          <Item>
-          <Card>
-                <CardImg src={cev} style={{maxWidth:"260px", minHeight:"168px"}}/>
+      <Swiper
+      slidesPerView={3}
+      spaceBetween={2}
+      pagination={{
+        clickable: true
+      }}
+      breakpoints={{
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 3
+        },
+        "@0.75": {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 2,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween: 2,
+        }
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
+      <Card>
+                <CardImg backgroundUrl={cev}style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Cursos Avulsos
@@ -30,12 +59,10 @@ export function CardEducation() {
                     </CardText>
                 </CardContent>
             </Card>
-          </Item>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Item>
-          <Card>
-                <CardImg src={senac} style={{maxWidth:"260px", minHeight:"168px"}}/>
+      </SwiperSlide>
+      <SwiperSlide>
+      <Card>
+                <CardImg backgroundUrl={senac} style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Técnico em Informática
@@ -51,13 +78,10 @@ export function CardEducation() {
                     </CardText>
                 </CardContent>
             </Card>
-
-          </Item>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Item>
-          <Card>
-                <CardImg src={labenu} style={{maxWidth:"260px", minHeight:"168px"}}/>
+      </SwiperSlide>
+      <SwiperSlide>
+      <Card>
+                <CardImg backgroundUrl={labenu} style={{maxWidth:"260px", minHeight:"168px"}}/>
                 <CardContent>
                     <CardTitle>
                     Full Stack Developer Noturno 
@@ -73,9 +97,9 @@ export function CardEducation() {
                     </CardText>
                 </CardContent>
             </Card>
-          </Item>
-        </Grid>
-      </Grid>
-      </CardFlex>
+      </SwiperSlide>
+      </Swiper>
+          
+        
     )
 }

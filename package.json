@@ -19,6 +19,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "surge": "^0.23.1",
+    "swiper": "^8.3.0",
     "vercel": "^27.0.0"
   },
   "devDependencies": {
