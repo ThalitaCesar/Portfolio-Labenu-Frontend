@@ -35,18 +35,22 @@ display: flex;
 
     
     @media (max-width: 768px) {
+      z-index:1;
       margin: 0;
-      flex-flow: column nowrap;
+      flex-flow: row;
       position: fixed;
       transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200%)'};
       text-align: start;
       top: 55px;
-      left: 2px;
-      right:4px;
+      left: 0px;
+      right:0px;
       width: 74.6vw;
       height: 80vh;
-      margin-left: 22px;
+      margin-left: -34px;
+      margin-right: 24px;
       margin-top: 20px;
+      padding-left:0px;
+      padding-right:40px;
       background-color: ${({ open }) => open ? '#011627' : 'transparent'};
       transition: transform 0.3s ease-in-out;}
       @media (max-width: 450px) {
@@ -677,5 +681,54 @@ export const DropdownContainer = styled.div`
 export const NavDropDown = styled.div`
 @media screen and (min-width: 961px) {
 	}
+`;
+
+export const Form = styled.form`
+display:flex;
+flex-direction:column;
+padding-right:40px;
+`;
+
+export const Label = styled.div`
+margin-bottom:5px;
+margin-top: 10px;
+`;
+
+export const Input = styled.input`
+font-family: 'Fira Code';
+font-size: 16px;
+color: #465E77;
+width: 270px;
+height: 31px;
+background: #011221;
+border: 1px solid #607B96;
+box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.3);
+border-radius: 8px;
+`;
+
+export const TextArea = styled.textarea`
+font-family: 'Fira Code';
+font-size: 16px;
+color: #465E77;
+width:270px;
+height: 130px;
+background: #011221;
+border: 1px solid #607B96;
+box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.3);
+border-radius: 8px;
+`;
+
+export const Submit = styled.input`
+border: none;
+padding: 10px 14px;
+width: 146px;
+height: 38px;
+background: #1C2B3A;
+border-radius: 8px;
+font-family: 'Fira Code';
+font-size: 14px;
+color: #FFFFFF;
+padding: 10px;
+margin-top:20px;
 `;
 

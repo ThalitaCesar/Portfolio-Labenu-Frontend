@@ -14,6 +14,7 @@ import { Pagination } from "swiper";
 export function CardEducation() {
   
     return (
+      <>
       <Swiper
       slidesPerView={3}
       spaceBetween={2}
@@ -99,7 +100,6 @@ export function CardEducation() {
             </Card>
       </SwiperSlide>
       </Swiper>
-          
-        
+        </>
     )
 }
