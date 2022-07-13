@@ -1,4 +1,4 @@
-export function CodeProject() {
+export function CodeContact() {
     return (
         <div>
         </div>
