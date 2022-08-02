@@ -25,9 +25,9 @@ export function Hello(){
                 </HomeInfo>
                 <Snake>
                     <ContainerGame>
-                        <img src={code1} style={{width: "500px"}}/>
-                        <img src={code2} style={{width: "500px", marginTop: "10px", marginBottom: "10px"}}/>
-                        <img src={code3} style={{width: "500px"}}/>
+                        <img src={code1} style={{width: "400px"}}/>
+                        <img src={code2} style={{width: "400px", marginTop: "10px", marginBottom: "10px"}}/>
+                        <img src={code3} style={{width: "400px"}}/>
                     </ContainerGame>
                 </Snake>
             </HelloContainer>

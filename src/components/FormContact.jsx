@@ -1,22 +1,32 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { Form, Input, Label, Submit, TextArea } from "./styles";
 
 export function FormContact() {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-    console.log(watch("example")); 
 
+    const [form,setForm] = useState([])
+    const data = form
+
+    const handleInputChange=(e)=>{
+        const {name, value} = e.target;
+        setForm({...form, [name]: value})
+    }
+    const handleSubmit=(e)=> {
+    e.preventDefault();
+    alert('Sua mensagem foi enviada com sucesso.');
+  }
+
+  console.log(data)
+    
     return (
         <Form>
             <Label>Name:</Label>
-        <Input {...register("example")} />
+        <Input type="text" name="name" onChange={handleInputChange}/>
             <Label>Email:</Label>
-        <Input  {...register("exampleRequired", { required: true })} />
-        {errors.exampleRequired && <span>This field is required</span>}
+        <Input  type="text" name="email" onChange={handleInputChange}/>
             <Label>Mensagem:</Label>
-        <TextArea />
-        <Submit type="submit" value="enviar_mensagem" onSubmit={handleSubmit(onSubmit)}/>
+        <TextArea type="text" name="msg" onChange={handleInputChange}/>
+        <Submit type="submit" value="enviar_mensagem" onSubmit={handleSubmit}/>
         </Form>
     )
 }
