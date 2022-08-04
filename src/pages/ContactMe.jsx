@@ -3,22 +3,92 @@ import { Header } from "../components/Header";
 import code1 from '../assets/code1.png';
 import code2 from '../assets/code2.png';
 import code3 from '../assets/code3.png';
-import { HelloContainer, HomeInfo, ContainerGame, Pages, Snake, Span, Span1, Span2, Span3, Text1, Text2, Text3, Text4, ContactInfo, ContactContainer } from "./styles";
-import { FormContact } from "../components/FormContact";
-import { CodeContact } from "../components/CodeContact";
+import { HelloContainer, HomeInfo, ContainerGame, Pages, Snake, Span, Span1, Span2, Span3, Text1, Text2, Text3, Text4, ContactInfo, ContactContainer, ContactInfoContact } from "./styles";
+import { ContainerCode, Form, Input, Label, Submit, TextArea, TextCode, TextExperiences } from "../components/styles";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
 export function ContactMe(){
+
+    const [nameUser,setNameUser] = useState('')
+    const [email,setEmail] = useState('')
+    const [msg,setMsg] = useState('')
+
+    const navigate = useNavigate();
+
+    const handleSubmit=(e)=> {
+    e.preventDefault();
+  }
+
+  const goToConfirmation = () => {
+    navigate('/contactme/confirmation')
+  };
+
+
     return(
             <Pages>
             <Header/>
             <ContactContainer>
-                <ContactInfo style={{borderRight:"1px solid #1E2D3D"}}>
-                <FormContact/>
-                </ContactInfo>
+                <ContactInfoContact>
+                <Form>
+                <Label>Name:</Label>
+                <Input type="text" value={nameUser} onChange={(e)=>setNameUser(e.target.value)}/>
+                <Label>Email:</Label>
+                <Input  type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                <Label>Mensagem:</Label>
+                <TextArea type="text" value={msg} onChange={(e)=>setMsg(e.target.value)}/>
+                <Submit type="submit" value="enviar_mensagem" onSubmit={handleSubmit}
+                  onClick={goToConfirmation}/>
+                </Form>
+                </ContactInfoContact>
                 <Snake>
-                   <CodeContact/>
+
+                <TextCode>
+                        <span style={{color: "#607B96"}}>
+                        <span style={{color: "#C98BDF "}}>const</span> 
+                        <span style={{color: "#5565E8"}}> button </span>  
+                        <span style={{color: "#C98BDF"}}>=</span> 
+                        <span style={{color: "#5565E8"}}> document.querySelector</span> 
+                        <span>(<span> 
+                          <span style={{color: "#FEA55F"}}>'#sendBtn'</span>
+                          </span>)</span>
+                          <br></br>
+                          <br></br>
+                        <span style={{color: "#C98BDF "}}>const</span> 
+                        <span style={{color: "#5565E8"}}> message </span>  
+                        <span style={{color: "#C98BDF"}}>=</span> 
+                        <span style={{color: "#607B96"}}>&#123; </span>
+                         <br></br>
+                         <span style={{color: "#5565E8"}}> name: </span>  
+                         <span style={{color: "#FEA55F"}}>{nameUser}</span>, <br></br>
+                         <span style={{color: "#5565E8"}}> email: </span> 
+                         <span style={{color: "#FEA55F"}}>{email}</span>, <br></br>
+                         <span style={{color: "#5565E8"}}> message: </span> 
+                         <span style={{color: "#FEA55F"}}>{msg}</span><br></br>
+                         <span style={{color: "#607B96"}}>&#125; </span>,<br></br>
+                         <br></br>
+                         <br></br>
+                         <span style={{color: "#5565E8"}}> button.addEventListener<span/>
+                         <span style={{color: "#607B96"}}>&#40;</span>
+                          <span  style={{color: "#FEA55F"}}>'click'</span>,
+                          <span style={{color: "#607B96"}}> &#40; &#41; </span> 
+                          <span style={{color: "#C98BDF "}} >=></span>
+                          <span style={{color: "#607B96"}}>&#123; </span> <br></br>
+	                        <span style={{color: "#5565E8"}}>form.send</span>
+                          <span style={{color: "#607B96"}}>&#40;</span>
+                          <span style={{color: "#5565E8"}}> message</span>
+                           <span style={{color: "#607B96"}}> &#41; ;</span>  <br></br>
+                          <br></br>
+                          <span style={{color: "#607B96"}}>&#125; </span>
+                           <span style={{color: "#607B96"}}>  &#41; </span>
+
+
+                           </span>
+                           </span>
+    
+                         </TextCode>
                 </Snake>
             </ContactContainer>
            <Footer/>

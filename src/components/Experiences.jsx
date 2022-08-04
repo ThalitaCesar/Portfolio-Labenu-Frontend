@@ -22,7 +22,7 @@ export function Experiences() {
                          <br></br>
                          <span style={{color: "#43D9AD"}}> Empresa: </span>  <span style={{color: "#C98BDF"}}>'Hirix'</span>, <br></br>
                          <span style={{color: "#43D9AD"}}> Cargo: </span> <span style={{color: "#C98BDF"}}>'Desevolvedora Frontend' </span>, <br></br>
-                         <span style={{color: "#43D9AD"}}> LinguagensEFerramentas: </span> <span style={{color: "#C98BDF"}}>'React, typescript, styled-components, material Ui, graphQl, <br></br> mongodb, docker, figma, trello, etc... ' </span>,  <br></br>
+                         <span style={{color: "#43D9AD"}}> LinguagensEFerramentas: </span> <span style={{color: "#C98BDF"}}>'React, typescript, styled-components, material Ui, graphQl, mongodb, docker, figma, trello, etc... ' </span>,  <br></br>
                          <span style={{color: "#43D9AD"}}> Periodo: </span> <span style={{color: "#C98BDF"}}>'05/2022 • Atualmente' </span>,  <br></br>
                          <span style={{color: "#FEA55F"}}>&#125; </span>,<br></br>
                          <span style={{color: "#C98BDF"}}>]</span>; 

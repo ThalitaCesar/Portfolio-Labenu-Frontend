@@ -51,14 +51,16 @@ height: 100vh;
 
 export const ContactContainer = styled.div `
 display:flex;
-justify-content: space-between;
-background-image: url(${Blur});
+justify-content: center;
 background-repeat: no-repeat;
 background-position: right;
 background-size:50%;
 height: 100vh;
 
 @media(max-width: 1020px) {
+  flex-direction:column;
+  justify-content: start;
+  align-items:center;
     background-size:150%;
     background-position: top right;
   };
@@ -369,12 +371,31 @@ height: 100%;
 `
 
 export const ContactInfo = styled.div `
-padding-left: 80px;
-padding-top: 40px;
+padding-right: 10px;
 display:flex;
 flex-direction: column;
-justify-content: start;
+justify-content: center;
 @media(max-width: 1024px) {
+  border-right: none;
+  align-items: center;
+  margin: 10px;
+  padding:10px;
+}
+@media(max-width: 450px) {
+    align-items: center;
+    margin: 10px;
+    padding:10px;
+  }
+`
+
+export const ContactInfoContact = styled.div `
+border-right:1px solid #1E2D3D;
+padding-right: 10px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+@media(max-width: 1024px) {
+  border-right:none;
   border-right: none;
   align-items: center;
   margin: 10px;

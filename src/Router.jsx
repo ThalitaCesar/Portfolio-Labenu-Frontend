@@ -7,6 +7,7 @@ import { Bio } from "./components/Bio";
 import { Experiences } from "./components/Experiences";
 import { Education } from "./components/Education";
 import { Hobbies } from "./components/Hobbies";
+import { PageConfirmation } from "./components/PageConfirmation";
 
 export function Router(){
     return(
@@ -19,6 +20,7 @@ export function Router(){
             <Route path="/about/hobbies" element={<Hobbies/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/Contactme" element={<ContactMe/>}/>
+            <Route path="/contactme/confirmation" element={<PageConfirmation/>}/>
         </Routes>
     )
 }

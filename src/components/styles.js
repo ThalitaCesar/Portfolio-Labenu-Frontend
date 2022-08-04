@@ -448,11 +448,18 @@ height: 70vh;
 }
 `
 
+export const TextCode = styled.div`
+padding-top: 40px;
+padding-left: 40px;
+padding-right: 40px;
+max-width:300px;
+`
+
 export const TextExperiences = styled.p`
 padding-top: 40px;
 padding-left: 40px;
 padding-right: 40px;
-
+max-width:70vw;
 `
 
 export const ContainerInfoHobbies = styled.div`
