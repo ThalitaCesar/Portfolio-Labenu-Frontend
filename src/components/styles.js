@@ -16,7 +16,8 @@ flex-direction: row;
 align-items:  center;
 justify-content: space-between;
 border-bottom: 1px solid #1E2D3D;
-@media(max-width: 450px) {
+@media(max-width: 600px) {
+flex-direction: column;
 padding-left: 0px;
 padding-right:10px;
 padding-top:5px;
@@ -33,12 +34,14 @@ margin-top: -15px;
 margin-bottom: -15px;
 display: flex;
 
+
     
     @media (max-width: 768px) {
       z-index:1;
       margin: 0;
       flex-flow: row;
       position: fixed;
+      flex-direction: column;
       transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(200%)'};
       text-align: start;
       top: 55px;
@@ -453,7 +456,22 @@ padding-top: 40px;
 padding-left: 40px;
 padding-right: 40px;
 max-width:300px;
+@media screen and (max-width: 600px) {
+  display:none;
+}
 `
+export const Mobile = styled.div`
+display:none;
+@media screen and (max-width: 600px) {
+  display:block;
+}`
+
+export const FlexBoxDesktop = styled.div`
+display:flex;
+justify-content: space-between;
+@media screen and (max-width: 600px) {
+  display:none;
+}`
 
 export const TextExperiences = styled.p`
 padding-top: 40px;
@@ -562,7 +580,7 @@ padding: 15px;
 `
 
 export const CardProjectDescription = styled.p`
-text-align: justify;
+text-align: start;
 
 `
 
@@ -651,7 +669,7 @@ height: 70vh;
 `
 
 export const CardProjectDiv = styled.div`
-margin: 0px 80px;
+margin: 0px 50px;
 @media screen and (max-width: 900px) {
   margin: 0px 30px;
   margin-right: 40px;

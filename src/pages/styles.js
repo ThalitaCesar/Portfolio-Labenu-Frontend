@@ -390,7 +390,7 @@ justify-content: center;
 
 export const ContactInfoContact = styled.div `
 border-right:1px solid #1E2D3D;
-padding-right: 10px;
+padding-right: 120px;
 display:flex;
 flex-direction: column;
 justify-content: center;
