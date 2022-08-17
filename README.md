@@ -3,7 +3,7 @@
 ## Sobre:
 O projeto faz parte do curso full stack da labenu, para usar o projeto utiliza o comando : npm run dev.
 
-Site: https://vercel.com/thalitacesar/portfolio-labenu 
+Site: https://portfolio-labenu.vercel.app/
 
 ## Imagens
 
