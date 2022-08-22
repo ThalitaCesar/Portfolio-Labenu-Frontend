@@ -2,6 +2,7 @@
 
 ## Sobre:
 O projeto faz parte do curso full stack da labenu, para usar o projeto utiliza o comando : npm run dev.
+Essa é a parte frontend, o projeto está em desenvolvimento...
 
 Site: https://portfolio-labenu.vercel.app/
 
