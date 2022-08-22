@@ -1,4 +1,4 @@
-# portfolio-labenu
+# Portfolio Labenu Frontend
 
 ## Sobre:
 O projeto faz parte do curso full stack da labenu, para usar o projeto utiliza o comando : npm run dev.
