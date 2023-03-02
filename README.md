@@ -1,12 +1,12 @@
 # Portfolio Labenu Frontend
 
-## Sobre:
-O projeto faz parte do curso full stack da labenu, para usar o projeto utiliza o comando : npm run dev.
-Essa é a parte frontend, o projeto está em desenvolvimento...
+## About:
+The project is part of labenu's full stack course, to use the project use the command: npm run dev.
+This is the frontend part, the project is under development...
 
 Site: https://portfolio-labenu.vercel.app/
 
-## Imagens
+## Images
 
 ### Desktop
 
