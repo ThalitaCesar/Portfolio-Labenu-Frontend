@@ -8,6 +8,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 box-sizing: border-box;
+overflow-x:hidden;
 width: 96vw;
 height: 93vh;
 margin: 40px;
@@ -52,6 +53,7 @@ height: 100vh;
 export const ContactContainer = styled.div `
 display:flex;
 justify-content: center;
+align-items:center;
 background-repeat: no-repeat;
 background-position: right;
 background-size:50%;
@@ -124,13 +126,16 @@ justify-content: center;
 export const Text1 = styled.p `
 font-style: normal;
 font-size: 16px;
-line-height: 41px;
+line-height: 11px;
 color: #E5E9F0;
 @media(max-width: 450px) {
     font-size: 12px;
   }
   @media(max-width: 1024px) {
     font-size: 12px;
+  }
+   @media(max-width: 300px) {
+    font-size: 11px;
   }
 `
 export const Text2 = styled.span `
@@ -141,7 +146,10 @@ color: #E5E9F0;
   font-size: 42px;
 }
 @media(max-width: 450px) {
-    font-size: 42px;
+    font-size: 34px;
+  }
+  @media(max-width: 300px) {
+    font-size: 24px;
   }
 
 `
@@ -264,6 +272,7 @@ height: 70vh;
   height: 60vh;
 }
 @media screen and (max-width: 768px) {
+  flex-direction: column;
   height: 60vh;
 }
 @media screen and (max-width: 500px) {

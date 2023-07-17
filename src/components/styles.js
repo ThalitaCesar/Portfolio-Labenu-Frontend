@@ -122,20 +122,22 @@ flex-direction: row;
 
 `
 export const ButtonMenu = styled.button`
-background-color: transparent;
-border:none;
-border-left: 1px solid #1E2D3D;
-padding:10px;
-font-size:16px;
-text-decoration:none;
-color: #607B96;
-&:hover {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #1E2D3D;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: ${({ selected }) => selected ? '#FFFFFF' : '#607B96'};
+  &:hover {
     color: #E5E9F0;
     border-bottom: 3px solid #FEA55F;
-  };
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 768px) {
     border: none;
-    color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
+    color: ${({ open, selected }) => (open || selected) ? 'transparent' : '#FFFFFF'};
   }
 `;
 
@@ -213,24 +215,25 @@ color: #607B96;
 
 
 export const ButtonMenu2 = styled.button`
-background-color: transparent;
-border:none;
-border-left: 1px solid #1E2D3D;
-padding: 10px;
-font-size:16px;
-text-decoration:none;
-color: #607B96;
-&:hover{
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #1E2D3D;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: ${({ selected }) => selected ? '#FFFFFF' : '#607B96'};
+  
+  &:hover {
     color: #E5E9F0;
     border-bottom: 3px solid #FEA55F;
   }
 
   @media screen and (max-width: 768px) {
     border: none;
-    color: ${({ open }) => open ? 'transparent' : '#FFFFFF'};
-
+    color: ${({ open, selected }) => (open || selected) ? 'transparent' : '#FFFFFF'};
   }
-`
+`;
 
 export const ButtonGroup2 = styled.div`
 display: flex;
@@ -264,8 +267,10 @@ padding-left: 10px;
 padding-top: 10px;
 font-size:16px;
 color: #607B96;
+cursor: pointer;
 &:hover {
     color: #FFFFFF;
+    cursor: pointer;
   };
 
 `
@@ -290,9 +295,7 @@ border-right: 1px solid #1E2D3D;
 `
 
 export const TextBox = styled.div`
-
 padding: 40px;
-
 `
 
 export const NumberOfLines = styled.span`
@@ -562,6 +565,7 @@ height: 370px;
 
 export const CardProjectMedia = styled.div`
 background-image: url("${(props) => props.backgroundUrl}");
+background-size:cover;
 width: 300px;
 height: 150px;
 border-top-left-radius: 15px;
@@ -688,6 +692,7 @@ font-size: 16px;
 color: #607B96;
 &:hover{
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 `
@@ -755,5 +760,35 @@ font-size: 14px;
 color: #FFFFFF;
 padding: 10px;
 margin-top:20px;
+cursor:pointer;
 `;
 
+export const BioContainer = styled.div`
+margin: 15px;
+  border: 1px solid #1E2D3D;
+  border-radius: 8px;
+  display: flex;
+  height:440px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+`;
+export const MenuImage = styled.div`
+display: flex;
+width: 100%;
+justify-content: flex-end;
+align-items:center;
+text-align:end;
+height: 27px;
+border-bottom: 1px solid #1E2D3D;
+`;
+export const ImageContainer = styled.div`
+  width: 280px;
+  height: 410px;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+`;

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
-    "framer-motion": "^6.4.3",
+    "framer-motion": "^6.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-flagkit": "^2.0.4",

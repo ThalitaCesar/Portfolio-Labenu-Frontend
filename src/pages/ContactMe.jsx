@@ -7,7 +7,8 @@ import { HelloContainer, HomeInfo, ContainerGame, Pages, Snake, Span, Span1, Spa
 import { ContainerCode, Form, Input, Label, Submit, TextArea, TextCode, TextExperiences } from "../components/styles";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import {motion} from 'framer-motion';
+import { slideIn, textVariant2 } from "../utils/motion";
 
 
 export function ContactMe(){
@@ -31,20 +32,26 @@ export function ContactMe(){
             <Pages>
             <Header/>
             <ContactContainer>
+              
+            <motion.div variants={slideIn("right", "spring", 0, 1.8)}
+                                initial="hidden"
+                                animate="show">
                 <ContactInfoContact>
                 <Form>
                 <Label>Name:</Label>
                 <Input type="text" value={nameUser} onChange={(e)=>setNameUser(e.target.value)}/>
                 <Label>Email:</Label>
                 <Input  type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                <Label>Mensagem:</Label>
+                <Label>Message:</Label>
                 <TextArea type="text" value={msg} onChange={(e)=>setMsg(e.target.value)}/>
                 <Submit type="submit" value="enviar_mensagem" onSubmit={handleSubmit}
                   onClick={goToConfirmation}/>
                 </Form>
                 </ContactInfoContact>
-                <Snake>
+                </motion.div>
 
+                <motion.div variants={textVariant2} initial="hidden" whileInView="show">
+                <Snake>
                 <TextCode>
                         <span style={{color: "#607B96"}}>
                         <span style={{color: "#C98BDF "}}>const</span> 
@@ -89,7 +96,8 @@ export function ContactMe(){
                            </span>
     
                          </TextCode>
-                </Snake>
+                         </Snake>
+                         </motion.div>
             </ContactContainer>
            <Footer/>
            </Pages>

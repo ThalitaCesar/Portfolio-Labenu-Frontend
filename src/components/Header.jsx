@@ -32,7 +32,6 @@ export function Header() {
         
             <ButtonMenuLogo>thalita-cesar</ButtonMenuLogo>
             <Hamburguer open={open} onClick={() => setOpen(!open)}>
-              {/* <img src={Vector}/>   */}
               <div />
               <div />
               <div />   

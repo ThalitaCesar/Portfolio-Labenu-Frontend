@@ -8,7 +8,7 @@ import { DropdownContainer, DropDownMenu } from './styles';
 export function DropdownMenu ({ currency, setCurrency }) {
 	const ref = useRef();
 	const listRef = useRef();
-	const [show, setShow] = useState(false);
+	const [show, setShow] = useState(true);
 
 	const closeDropdown = () => {
 		setShow(false);
@@ -38,7 +38,7 @@ export function DropdownMenu ({ currency, setCurrency }) {
 
 	return (
 		<DropdownContainer>
-			<DropDownMenu ref={ref} onClick={() => setShow(true)} style={{paddingTop: "10px", textAlign:"center"}}>
+			<DropDownMenu ref={ref} onClick={() => setShow(!show)} style={{paddingTop: "10px", textAlign:"center"}}>
 			Informações_pessoais
 				<IconContext.Provider value={{ size: '1.3em', color: '#607b96' }}>
 					<AiOutlineCaretDown onClick={() => closeDropdown}/>

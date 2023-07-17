@@ -1,29 +1,27 @@
-
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { SideBarInfo } from "../components/SideBarInfo";
-import { AboutMeContainer, ContainerInfoAbout, Pages, TitleInfo, FlexAbout} from "./styles";
+import { textContainer, textVariant2 } from "../utils/motion";
+import { motion } from 'framer-motion';
+import { AboutMeContainer, ContainerInfoAbout, Pages, TitleInfo, FlexAbout } from "./styles";
 
+export function AboutMe() {
 
-
-export function AboutMe(){
-
-    
-    return(
-            <Pages>
-            <Header/>
-            <AboutMeContainer>
-            <SideBarInfo/>
-            <ContainerInfoAbout>
-           
-            <TitleInfo>Seja Bem Vindo! 🤘</TitleInfo> 
+  return (
+    <Pages>
+      <Header />
+      <AboutMeContainer>
+        <SideBarInfo />
+        <ContainerInfoAbout>
+          <motion.div variants={textVariant2} initial="hidden" whileInView="show">
+            <TitleInfo>Welcome! 🤘</TitleInfo>
             <p>
-                Puxe a cadeira, pegue uma xícara de café e fique a vontade para navegar no menu lateral(Desktop) ou em cima (Mobile).
+              Pull up a chair, grab a cup of coffee, and feel free to navigate through the sidebar menu (Desktop) or at the top (Mobile).
             </p>
-        
-            </ContainerInfoAbout>
-            </AboutMeContainer>
-           <Footer/>
-           </Pages>
-    )
-} 
+          </motion.div>
+        </ContainerInfoAbout>
+      </AboutMeContainer>
+      <Footer />
+    </Pages>
+  )
+}

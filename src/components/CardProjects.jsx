@@ -6,6 +6,9 @@ import "../styles.css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import Slider from "react-slick";
+import arte1 from '../assets/arte1.png'
+import { slideIn } from "../utils/motion";
+import {motion} from 'framer-motion';
 
 export function CardProjects() {
   const settings = {
@@ -38,21 +41,21 @@ export function CardProjects() {
     
           <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 1 
+            Project  1 
             <CardProjectTitle>
-            // nome_do_projeto
+            // arte_1_premium
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl={arte1}>
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Streaming documentary and film project about art, developed in react together with a team of developers.
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://www.arte1premium.com.br/" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
@@ -61,21 +64,21 @@ export function CardProjects() {
 
             <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 2
+            Project  2
             <CardProjectTitle>
-            //  nome_do_projeto
+            //  zenite
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl="https://user-images.githubusercontent.com/83131771/195320891-bfc56bcd-f6ef-4bc9-9574-a23b8f0b6835.png">
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Project developed with React, Styled Components and the ViaCEP API. 
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://github.com/ThalitaCesar/Zenite-API-ViaCEP" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
@@ -84,21 +87,21 @@ export function CardProjects() {
 
             <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 3
+            Project  3
             <CardProjectTitle>
-            // nome_do_projeto
+            // lama_ecommerce
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl="https://user-images.githubusercontent.com/83131771/236363409-ce37a1ad-e7d9-45cf-92ff-b74b6d1a5c60.png">
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Project developed to complete the labenu course in full stack developer, with node, react and MySQL.
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://github.com/ThalitaCesar/Lama---Ecommerce" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
@@ -108,74 +111,85 @@ export function CardProjects() {
         </Mobile>
 
         <FlexBoxDesktop>
-              
+            
+        <motion.div variants={slideIn("left", "spring", 0, 1.8)}
+                                initial="hidden"
+                                animate="show"> 
               <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 1 
+            Project  1 
             <CardProjectTitle>
-            // nome_do_projeto
+            // arte_1_premium
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl={arte1}>
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Streaming documentary and film project about art, developed in react together with a team of developers.
+                
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://www.arte1premium.com.br/" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
         </CardProjectDiv>
+        </motion.div>
     
-
+        <motion.div variants={slideIn("right", "spring", 0, 1.8)}
+                                initial="hidden"
+                                animate="show">
             <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 2
+            Project  2
             <CardProjectTitle>
-            //  nome_do_projeto
+            //  zenite
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl="https://user-images.githubusercontent.com/83131771/195320891-bfc56bcd-f6ef-4bc9-9574-a23b8f0b6835.png">
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Project developed with React, Styled Components and the ViaCEP API.
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://github.com/ThalitaCesar/Zenite-API-ViaCEP" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
         </CardProjectDiv>
+        </motion.div>
 
-
+<motion.div variants={slideIn("left", "spring", 0, 1.8)}
+                                initial="hidden"
+                                animate="show">
             <CardProjectDiv>
             <CardProjectNumber>
-            Projeto 3
+            Project  3
             <CardProjectTitle>
-            // nome_do_projeto
+            // lama_ecommerce
             </CardProjectTitle>
             </CardProjectNumber> 
         <CardProject>
-            <CardProjectMedia backgroundUrl="https://jaru.ro.gov.br/wp-content/uploads/2020/08/dataanalytics_1193397784.jpg">
+            <CardProjectMedia backgroundUrl="https://user-images.githubusercontent.com/83131771/236363409-ce37a1ad-e7d9-45cf-92ff-b74b6d1a5c60.png">
                 <CardProjectIcon src={IconBox} style={{height:"30px", width: "30px"}}/>
             </CardProjectMedia>
             <CardProjectContent>
                 <CardProjectDescription>
-                Projeto desevolvido em react com node.js, styled componentes e material ui. 
+                Project developed to complete the labenu course in full stack developer, with node, react and MySQL.
                 </CardProjectDescription>
                 <CardProjectButton>
-                <LinkP href="https://github.com/" target="_blank">Ver Projeto</LinkP>
+                <LinkP href="https://github.com/ThalitaCesar/Lama---Ecommerce" target="_blank">See Project</LinkP>
                 </CardProjectButton>
             </CardProjectContent>
         </CardProject>
         </CardProjectDiv>
+        </motion.div>
         </FlexBoxDesktop>
         </>
     )

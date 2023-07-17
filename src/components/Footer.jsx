@@ -8,7 +8,7 @@ export function Footer() {
     return (
         <FooterContainer>
             <ButtonGroup1>
-            <ButtonMenuFooter>me-encontre:</ButtonMenuFooter>
+            <ButtonMenuFooter>find me:</ButtonMenuFooter>
             <Link1 href="https://www.linkedin.com/in/thalitac%C3%A9sar/" target="_blank"><BsLinkedin/></Link1>
             <Link1 href="mailto:thalita.walleska@gmail.com" target="_blank"><SiGmail/></Link1>
             </ButtonGroup1>
